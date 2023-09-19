@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+ 
+            <div class="upper">
+                <h3>Now Playing</h3>
+        
+                <img id="albumArt" src="downtown.jpg" alt="Album Art">
+                <p id="songname">Downtown</p>
+           </div>
+        
+            <div class="lower">
+                <div class="audio">
+                    <audio id="audioPlayer" controls>
+                        <source src="downtown.mpeg" type="audio/mpeg">
+                        <source src="lahore.mpeg" type="audio/mpeg">
+                        <source src="rani.mpeg" type="audio/mpeg">
+                        <!-- Add more <source> elements for additional songs -->
+                    </audio>
+                </div>
+               
+        
+                <div id="controls">
+                
+                    <div id="prevBtn"><span class="material-symbols-outlined">
+                        skip_previous
+                        </span></div>
+                    <div id="playPauseBtn"><span class="material-symbols-outlined">
+                        play_pause
+                        </span></div>
+                    <div id="nextBtn"><span class="material-symbols-outlined">
+                        skip_next
+                        </span></div>
+
+                    <div id="showListBtn" onclick="myFunction()">
+
+                        
+                         <div id="myDIV">
+                            <ul id="songList"></ul>
+                          </div>
+
+                        <span id="loop"  class="material-symbols-outlined">
+                        queue_music
+                        </span>
+                    </div>
+                  
+                </div>
+        
+            </div>
+            
+        </div>
+
+    </div>
+
+        
+    
+
+    <script>
+   
+
+     
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+        
+    </script>
+
+    <script src="helo.js"></script>
+</html>
